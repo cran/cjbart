@@ -54,7 +54,7 @@ summary(het_effects)
 plot(het_effects, covar = "covar1")
 
 ## ----plot_imces2--------------------------------------------------------------
-plot(het_effects, covar = "covar1", plot_levels = c("a2","a3","b2","b3"))
+plot(het_effects, covar = "covar1", plot_levels = c("a2","a3","e2","e3"))
 
 ## ----cregg--------------------------------------------------------------------
 cregg_amce <- cregg::cj(fake_data, Y ~ A + B + C + D + E, id = ~ id1)

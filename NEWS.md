@@ -1,3 +1,8 @@
+# cjbart 0.2.1
+
+* Minor internal changes to keep pace with R development
+* Minor changes to vignette wording
+
 # cjbart 0.2.0
 
 * Addresses unbalanced chunk delimiters in package vignette
