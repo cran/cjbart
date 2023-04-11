@@ -21,7 +21,7 @@ IMCE(
 
 \item{model}{A model object, the result of running \code{cjbart()}}
 
-\item{attribs}{Vector of attribute names}
+\item{attribs}{Vector of attribute names for which IMCEs will be predicted}
 
 \item{ref_levels}{Vector of reference levels, used to calculate marginal effects}
 
