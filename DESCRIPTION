@@ -1,6 +1,6 @@
 Package: cjbart
 Title: Heterogeneous Effects Analysis of Conjoint Experiments
-Version: 0.3.0
+Version: 0.3.1
 Authors@R: c(
     person(given = "Thomas",
            family = "Robinson",
@@ -18,17 +18,18 @@ License: Apache License (>= 2.0)
 Encoding: UTF-8
 RoxygenNote: 7.2.3
 Depends: R (>= 3.6.0), BART
-Imports: stats, rlang, tidyr, ggplot2, randomForestSRC, Rdpack
+Imports: stats, rlang, tidyr, ggplot2, randomForestSRC (>= 3.2.2),
+        Rdpack
 Suggests: testthat, knitr, parallel, rmarkdown
 VignetteBuilder: knitr
 URL: https://github.com/tsrobinson/cjbart
 BugReports: https://github.com/tsrobinson/cjbart/issues
 RdMacros: Rdpack
 NeedsCompilation: no
-Packaged: 2023-04-11 21:14:42 UTC; tsr
+Packaged: 2023-06-07 09:27:19 UTC; tsr
 Author: Thomas Robinson [aut, cre, cph]
     (<https://orcid.org/0000-0001-7097-1599>),
   Raymond Duch [aut, cph] (<https://orcid.org/0000-0002-1166-7674>)
 Maintainer: Thomas Robinson <ts.robinson1994@gmail.com>
 Repository: CRAN
-Date/Publication: 2023-04-11 21:30:02 UTC
+Date/Publication: 2023-06-07 10:20:10 UTC
