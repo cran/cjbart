@@ -5,13 +5,16 @@ knitr::opts_chunk$set(
   fig.width = 7, fig.height = 5
 )
 
+library(randomForestSRC)
+options(rf.cores = 2)
+
 ## ----setup--------------------------------------------------------------------
 set.seed(89)
 library(ggplot2)
 library(cjbart)
 
 ## ----data, include=TRUE-------------------------------------------------------
-subjects <- 250
+subjects <- 100
 rounds <- 5
 profiles <- 2
 obs <- subjects*rounds*profiles
@@ -39,7 +42,8 @@ fake_data$Y <- ifelse(fake_data$E == "e2",
 ## ----train, include=TRUE------------------------------------------------------
 cj_model <- cjbart(data = fake_data,
                    Y = "Y", 
-                   id = "id1")
+                   id = "id1",
+                   ntree = 15, numcut = 20)
 
 
 ## ----OMCE, include=TRUE-------------------------------------------------------
